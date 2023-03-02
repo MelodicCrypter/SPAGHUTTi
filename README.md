@@ -1,6 +1,8 @@
 # SPAGHUTTi
 
-SPAGHUTTi stands for SvelteKit, Postgres, Auth.js, GraphQL, Hasura, URQL, TypeScript, Tailwind. The goal of this scaffolding is to quickly start a production-ready codebase.
+**SPAGHUTTi** stands for SvelteKit, Postgres, Auth.js, GraphQL, Hasura, URQL, TypeScript, Tailwind. The goal of this scaffolding is to quickly start a production-ready codebase.
+
+### [DEMO](https://spaghutti.vercel.app/)
 
 <br>
 
@@ -16,9 +18,9 @@ SPAGHUTTi stands for SvelteKit, Postgres, Auth.js, GraphQL, Hasura, URQL, TypeSc
 * **Prettier**
 * **ESLint**
 * **Vercel**
-* **Email API** (_SendGrid or MailJet not yet implemented_)
-* **Vitest** (_not yet implemented_)
-* **Stripe** (_not yet implemented, svelte-stripe package_)
+* **Email API** (_SendGrid or MailJet not_yet_implemented_)
+* **Vitest** (_not_yet_implemented_)
+* **Stripe** (_not_yet_implemented, svelte-stripe package_)
 
 <br>
 
