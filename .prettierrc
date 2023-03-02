@@ -1,0 +1,32 @@
+{
+	"useTabs": true,
+	"endOfLine": "lf",
+	"tabWidth": 4,
+	"printWidth": 100,
+	"trailingComma": "es5",
+	"plugins": ["prettier-plugin-svelte"],
+	"semi": true,
+	"pluginSearchDirs": ["."],
+	"singleQuote": true,
+	"arrowParens": "always",
+	"overrides": [
+		{
+			"files": "**/*.svx",
+			"options": { "parser": "markdown" }
+		},
+		{
+			"files": "**/*.ts",
+			"options": { "parser": "typescript" }
+		},
+		{
+			"files": "**/CHANGELOG.md",
+			"options": {
+				"requirePragma": true
+			}
+		},
+		{
+			"files": "*.svelte",
+			"options": { "parser": "svelte" }
+		}
+	]
+}
