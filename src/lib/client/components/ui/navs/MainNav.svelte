@@ -68,7 +68,7 @@
 							>
 						</li>
 						<li class="mr-8">
-							<a class="inline-block font-bold hover:text-gray-900" target="_blank" href="https://github.com/MelodicCrypter/SvelteKit-Hasura-Authjs-TS-URQL-Scaffolding"
+							<a class="inline-block font-bold hover:text-gray-900" target="_blank" href="https://github.com/MelodicCrypter/SPAGHUTTi"
 							>Git Repo</a
 							>
 						</li>
@@ -122,7 +122,7 @@
 						>
 					</li>
 					<li class="py-3">
-						<a class="inline-block font-bold hover:text-gray-900" target="_blank" href="https://github.com/MelodicCrypter/SvelteKit-Hasura-Authjs-TS-URQL-Scaffolding"
+						<a class="inline-block font-bold hover:text-gray-900" target="_blank" href="https://github.com/MelodicCrypter/SPAGHUTTi"
 						>Git Repo</a
 						>
 					</li>
