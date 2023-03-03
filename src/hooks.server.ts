@@ -20,7 +20,9 @@ import { PUBLIC_APP_URL } from '$env/static/public';
 
 // Authorization
 async function authorization({ event, resolve }: any) {
-	// Protect any routes under /dashboard but this will only work on load
+	// Protect any routes under /dashboard but don't depend on this alone,
+	// we need to put a check on each page server using the parent(), that way
+	// each protected routes will call hooks.server before serving the page
 	if (event.url.pathname.startsWith('/dashboard')) {
 		const session = await event?.locals?.getSession();
 		if (!session) throw redirect(303, '/');

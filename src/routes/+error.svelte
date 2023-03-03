@@ -3,10 +3,7 @@
 	import { page } from '$app/stores';
 
 	// Components
-	import NotFound from '$lib/client/components/ui/NotFound.svelte';
-
-	// Styles
-	// import './../app.pcss';
+	import NotFound from '$lib/client/components/ui/other/NotFound.svelte';
 </script>
 
 <!-- ************************** BODY ******************************* -->
