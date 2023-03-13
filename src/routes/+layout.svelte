@@ -13,8 +13,8 @@
 	export let data;
 
   // Initialize URQL client and context
-  if (data && data.locals.urqlOptions) {
-    const client = createClient(data.locals.urqlOptions);
+  if (data && data.locals?.urqlOptions) {
+    const client = createClient(data.locals?.urqlOptions);
     setContextClient(client);
   }
 </script>
