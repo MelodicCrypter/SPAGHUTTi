@@ -1,7 +1,6 @@
 <!-- ************************ PROPERTIES **************************** -->
 <script lang="ts">
 	/** @type {import("./$types").LayoutData} */
-	import { onMount } from 'svelte';
 	import { setContextClient, createClient } from '@urql/svelte';
 
 	// Components
@@ -13,9 +12,11 @@
 	// States, local and global
 	export let data;
 
-	// Initialize URQL
-	const client = createClient(data.urqlOptions);
-	setContextClient(client);
+  // Initialize URQL client and context
+  if (data && data.locals.urqlOptions) {
+    const client = createClient(data.locals.urqlOptions);
+    setContextClient(client);
+  }
 </script>
 
 <!-- ************************** BODY ******************************* -->

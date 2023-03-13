@@ -1,15 +1,16 @@
 import type { LayoutServerLoad } from './$types';
 
+// Utils
+import { getHasuraUrqlOptions } from '$lib/server/utils/getHasuraUrqlOptions';
+
 export const load: LayoutServerLoad = async ({ locals, fetch }: any) => {
-	// Customize locals here, IF NEEDED
-	locals.scaffolding = 'by Hugh Caluscusin';
+	// Locals: Customize locals here, if needed only
+	locals.scaffoldAuthor = 'by Hugh Caluscusin';
+	// Set URQL options for HASURA
+	locals.urqlOptions = getHasuraUrqlOptions();
 
-	// Get URQL options
-	const response = await fetch('/api/get/urql-options/hasura');
-	const urqlOptions = await response.json();
-	locals.urqlOptions = urqlOptions;
-
-	// Auth.js based on their docs, adds session property
+	// Get also Auth.js session here just in case you want to put conditional
+	// checks in the client (page) aspect
 	const session = locals.getSession();
 
 	// Auth.js adds getSession function in the locals, so we need to serialize
